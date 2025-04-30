@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: spotify_historical_tracks_staging
+    description: "Cleaned and renamed historical track data"
+    columns:
+      - name: track_id
+        tests: [not_null, unique]
+      - name: track_name
+      - name: artists
+      - name: album_name
+      - name: popularity
+      - name: duration_ms
+      - name: explicit
+      - name: danceability
+      - name: energy
+      - name: speechiness
+      - name: acousticness
+      - name: instrumentalness
+      - name: liveness
+      - name: valence
+      - name: tempo
+      - name: track_genre
+
+  - name: spotify_new_releases_staging
+    description: "New Spotify track releases"
+    columns:
+      - name: track_id
+        tests: [not_null]
+      - name: track_name
+      - name: artists
+      - name: album_name
+      - name: release_date
+      - name: duration_ms
+      - name: explicit
+      - name: popularity
+
+  - name: spotify_trending_tracks_staging
+    description: "Trending Spotify tracks"
+    columns:
+      - name: track_id
+        tests: [not_null]
+      - name: track_name
+      - name: artists
+      - name: album_name
+      - name: release_date
+      - name: popularity
+      - name: duration_ms
+      - name: explicit
+
+  - name: spotify_top_albums_staging
+    description: "Top album metadata from Spotify"
+    columns:
+      - name: album_id
+        tests: [not_null, unique]
+      - name: album_name
+      - name: artist_id
+      - name: artist_name
+      - name: release_date
+      - name: album_type
+      - name: num_tracks
+      - name: external_url
+      - name: image_url
+

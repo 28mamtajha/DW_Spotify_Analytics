@@ -1,0 +1,22 @@
+select
+    track_id,
+    track_name,
+    artists,
+    album_name,
+    popularity,
+    duration_ms,
+    explicit,
+    danceability,
+    energy,
+    key,
+    loudness,
+    mode,
+    speechiness,
+    acousticness,
+    instrumentalness,
+    liveness,
+    valence,
+    tempo,
+    time_signature,
+    track_genre
+from {{ source('spotify', 'MUSIC_DATA_HIST') }}

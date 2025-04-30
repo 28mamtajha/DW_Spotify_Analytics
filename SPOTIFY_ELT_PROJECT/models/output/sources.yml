@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: spotify
+    database: USER_DB_CAMEL
+    schema: RAW
+    tables:
+      - name: MUSIC_DATA_HIST
+        description: "Historical Spotify track data"
+      - name: REALTIME_NEW_RELEASES
+        description: "Realtime new releases from Spotify"
+      - name: REALTIME_TRENDING_TRACKS
+        description: "Realtime trending tracks on Spotify"
+      - name: REALTIME_TOP_ALBUMS
+        description: "Top albums data fetched in realtime"
+
