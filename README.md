@@ -84,9 +84,10 @@ Music streaming platforms and record labels face challenges in analyzing **artis
 
 ---
 
+
 ## 📂 Repository  
 
-📌 [DW_Spotify_Analytics](https://github.com/28mamtajha/DW_Spotify_Analytics)  
+📌 [Spotify_Realtime_Analytics](https://github.com/28mamtajha/Spotify_Realtime_Analytics)  
+*End-to-end real-time Spotify analytics pipeline with Airflow, dbt, Snowflake, Tableau, and AI-powered recommendations.*
 
----
 
